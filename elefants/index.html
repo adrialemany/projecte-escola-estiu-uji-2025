@@ -2,67 +2,159 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Elefants</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Projecte del grup Elefants</h1>
 
   <p>Dibuix d'Ada</p>
-  <img src="Ada Elefants.png" alt="Dibuix d'Ada" width="300">
+  <div class="gallery">
+    <img src="Ada Elefants.png" alt="Dibuix d'Ada">
+  </div>
 
   <p>Dibuix d'Aina</p>
-  <img src="Aina elefants.png" alt="Dibuix d'Aina" width="300">
+  <div class="gallery">
+    <img src="Aina elefants.png" alt="Dibuix d'Aina">
+  </div>
 
   <p>Dibuix d'Anna</p>
-  <img src="Anna elefants.png" alt="Dibuix d'Anna" width="300">
+  <div class="gallery">
+    <img src="Anna elefants.png" alt="Dibuix d'Anna">
+  </div>
 
   <p>Dibuix de Daniel</p>
-  <img src="Daniel elefants.png" alt="Dibuix de Daniel" width="300">
+  <div class="gallery">
+    <img src="Daniel elefants.png" alt="Dibuix de Daniel">
+  </div>
 
   <p>Dibuix d'Elia</p>
-  <img src="Elia elefants.png" alt="Dibuix d'Elia" width="300">
+  <div class="gallery">
+    <img src="Elia elefants.png" alt="Dibuix d'Elia">
+  </div>
 
   <p>Dibuix d'Irene</p>
-  <img src="Irene elefants.png" alt="Dibuix d'Irene" width="300">
+  <div class="gallery">
+    <img src="Irene elefants.png" alt="Dibuix d'Irene">
+  </div>
 
   <p>Dibuix de Laia</p>
-  <img src="Laia Elefants.png" alt="Dibuix de Laia" width="300">
+  <div class="gallery">
+    <img src="Laia Elefants.png" alt="Dibuix de Laia">
+  </div>
 
   <p>Dibuixos de Manel</p>
-  <img src="Manel elefans.png" alt="Dibuix de Manel" width="300">
-  <img src="manel2 elefans.png" alt="Dibuix de Manel" width="300">
+  <div class="gallery">
+    <img src="Manel elefans.png" alt="Dibuix de Manel">
+    <img src="manel2 elefans.png" alt="Dibuix 2 de Manel">
+  </div>
 
   <p>Dibuix de Raúl</p>
-  <img src="RAÚL elefants.png" alt="Dibuix de Raúl" width="300">
+  <div class="gallery">
+    <img src="RAÚL elefants.png" alt="Dibuix de Raúl">
+  </div>
 
   <p>Dibuix de Sara A</p>
-  <img src="SARA A ELEFANTS 2.png" alt="Dibuix de Sara A" width="300">
+  <div class="gallery">
+    <img src="SARA A ELEFANTS 2.png" alt="Dibuix de Sara A">
+  </div>
 
   <p>Dibuix d'Aitana</p>
-  <img src="aitana elefants.png" alt="Dibuix d'Aitana" width="300">
+  <div class="gallery">
+    <img src="aitana elefants.png" alt="Dibuix d'Aitana">
+  </div>
 
   <p>Dibuix de Dario</p>
-  <img src="dario elefants.png" alt="Dibuix de Dario" width="300">
+  <div class="gallery">
+    <img src="dario elefants.png" alt="Dibuix de Dario">
+  </div>
 
   <p>Dibuix d'Edgar</p>
-  <img src="edgar elefants.png" alt="Dibuix d'Edgar" width="300">
+  <div class="gallery">
+    <img src="edgar elefants.png" alt="Dibuix d'Edgar">
+  </div>
 
   <p>Dibuixos d'Inés</p>
-  <img src="ines elefants.png" alt="Dibuix d'Inés" width="300">
-  <img src="ines2 elefants.png" alt="Dibuix 2 d'Inés" width="300">
+  <div class="gallery">
+    <img src="ines elefants.png" alt="Dibuix d'Inés">
+    <img src="ines2 elefants.png" alt="Dibuix 2 d'Inés">
+  </div>
 
   <p>Dibuix de Jimena</p>
-  <img src="jimena.png" alt="Dibuix de Jimena" width="300">
+  <div class="gallery">
+    <img src="jimena.png" alt="Dibuix de Jimena">
+  </div>
 
   <p>Dibuix de Lucas</p>
-  <img src="lucas.png" alt="Dibuix de Lucas" width="300">
+  <div class="gallery">
+    <img src="lucas.png" alt="Dibuix de Lucas">
+  </div>
 
   <p>Dibuix d'Oscar</p>
-  <img src="oscar.png" alt="Dibuix d'Oscar" width="300">
+  <div class="gallery">
+    <img src="oscar.png" alt="Dibuix d'Oscar">
+  </div>
 
   <p>Dibuix de Sara</p>
-  <img src="sara elefants.png" alt="Dibuix de Sara" width="300">
-
+  <div class="gallery">
+    <img src="sara elefants.png" alt="Dibuix de Sara">
+  </div>
 </body>
 </html>
-
