@@ -2,53 +2,160 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cangurs</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Projecte de cangurs</h1>
-  
+  <h1>Projecte de Cangurs</h1>
 
   <p>Dibuix d'Álvaro</p>
-  <img src="Álvaro - canguros.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Álvaro - canguros.png" alt="Dibuix d'Álvaro">
+  </div>
+
   <p>Dibuixos d'Andrea</p>
-  <img src="andrea cangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="andrea cangurs 1.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="andrea cangurs.png" alt="Dibuix d'Andrea">
+    <img src="andrea cangurs 1.png" alt="Dibuix d'Andrea 1">
+  </div>
+
   <p>Dibuix d'Arnau</p>
-  <img src="Arnau canguros.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Arnau canguros.png" alt="Dibuix d'Arnau">
+  </div>
+
   <p>Dibuix de Bruno</p>
-  <img src="bruno cangurs.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="bruno cangurs.png" alt="Dibuix de Bruno">
+  </div>
+
   <p>Dibuixos d'Emma</p>
-  <img src="emma cangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="emma cangurs2.png" alt="Imagen del proyecto" width="300">
-  <img src="Emma cangurs (1).png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="emma cangurs.png" alt="Dibuix d'Emma">
+    <img src="emma cangurs2.png" alt="Dibuix d'Emma 2">
+    <img src="Emma cangurs (1).png" alt="Dibuix d'Emma 3">
+  </div>
+
   <p>Dibuix de Fernando</p>
-  <img src="fernando cangurs.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="fernando cangurs.png" alt="Dibuix de Fernando">
+  </div>
+
   <p>Dibuix de Greta</p>
-  <img src="greta cangurs.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="greta cangurs.png" alt="Dibuix de Greta">
+  </div>
+
   <p>Dibuix d'Hernán</p>
-  <img src="Hernán canguros.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Hernán canguros.png" alt="Dibuix d'Hernán">
+  </div>
+
   <p>Dibuixos d'Inés</p>
-  <img src="Inés - Cangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="Inés - Cangurs2.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Inés - Cangurs.png" alt="Dibuix d'Inés">
+    <img src="Inés - Cangurs2.png" alt="Dibuix d'Inés 2">
+  </div>
+
   <p>Dibuixos de Joan</p>
-  <img src="joan cangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="joan cangurs 1.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="joan cangurs.png" alt="Dibuix de Joan">
+    <img src="joan cangurs 1.png" alt="Dibuix de Joan 1">
+  </div>
+
   <p>Dibuix de Laura</p>
-  <img src="Laura canguros.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Laura canguros.png" alt="Dibuix de Laura">
+  </div>
+
   <p>Dibuixos de Laura</p>
-  <img src="lauracangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="lauracangurs2.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="lauracangurs.png" alt="Dibuix de Laura 2">
+    <img src="lauracangurs2.png" alt="Dibuix de Laura 3">
+  </div>
+
   <p>Dibuix de Leire</p>
-  <img src="Leire canguros.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="Leire canguros.png" alt="Dibuix de Leire">
+  </div>
+
   <p>Dibuixos de Marina</p>
-  <img src="marinacangurs.png" alt="Imagen del proyecto" width="300">
-  <img src="marinacangurs2.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="marinacangurs.png" alt="Dibuix de Marina">
+    <img src="marinacangurs2.png" alt="Dibuix de Marina 2">
+  </div>
+
   <p>Dibuixos de Marta</p>
-  <img src="martacangur.png" alt="Imagen del proyecto" width="300">
-  <img src="martacangur2.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="martacangur.png" alt="Dibuix de Marta">
+    <img src="martacangur2.png" alt="Dibuix de Marta 2">
+  </div>
+
   <p>Dibuix de Sonia</p>
-  <img src="sonia cangurs.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="sonia cangurs.png" alt="Dibuix de Sonia">
+  </div>
+
   <p>Dibuix de Xavi</p>
-  <img src="xavi cangurs.png" alt="Imagen del proyecto" width="300">
+  <div class="gallery">
+    <img src="xavi cangurs.png" alt="Dibuix de Xavi">
+  </div>
 </body>
 </html>
