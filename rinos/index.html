@@ -2,60 +2,150 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Projecte Elefants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecte Rinos</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Projecte del grup Elefants</h1>
+  <h1>Projecte del grup Rinos</h1>
 
-  <p>Dibuix de David </p>
-  <img src="DAVID RINOS.png" alt="Dibuix de David" width="300">
+  <p>Dibuix de David</p>
+  <div class="gallery">
+    <img src="DAVID RINOS.png" alt="Dibuix de David">
+  </div>
 
   <p>Dibuix de Juan</p>
-  <img src="Juan Luis Rinos.png" alt="Dibuix de Juan" width="300">
+  <div class="gallery">
+    <img src="Juan Luis Rinos.png" alt="Dibuix de Juan">
+  </div>
 
-  <p>Dibuix de Mateo </p>
-  <img src="Mateo de Rinos.png" alt="Dibuix de Mateo" width="300">
+  <p>Dibuix de Mateo</p>
+  <div class="gallery">
+    <img src="Mateo de Rinos.png" alt="Dibuix de Mateo">
+  </div>
 
-  <p>Dibuix d'Ona </p>
-  <img src="ONA rinos.png" alt="Dibuix d'Ona" width="300">
+  <p>Dibuix d'Ona</p>
+  <div class="gallery">
+    <img src="ONA rinos.png" alt="Dibuix d'Ona">
+  </div>
 
-  <p>Dibuix d'Abel </p>
-  <img src="abel rinos.png" alt="Dibuix d'Abel" width="300">
+  <p>Dibuix d'Abel</p>
+  <div class="gallery">
+    <img src="abel rinos.png" alt="Dibuix d'Abel">
+  </div>
 
-  <p>Dibuix de David </p>
-  <img src="davidrinos.png" alt="Dibuix de David" width="300">
+  <p>Dibuix de David (2)</p>
+  <div class="gallery">
+    <img src="davidrinos.png" alt="Dibuix de David">
+  </div>
 
-  <p>Dibuixos d'Elena </p>
-  <img src="elena 2 rinos.png" alt="Dibuix d'Elena" width="300">
-  <img src="elena 3 rinos.png" alt="Dibuix d'Elena" width="300">
-  <img src="elena rinos.png" alt="Dibuix d'Elena" width="300">
+  <p>Dibuixos d'Elena</p>
+  <div class="gallery">
+    <img src="elena 2 rinos.png" alt="Dibuix d'Elena 1">
+    <img src="elena 3 rinos.png" alt="Dibuix d'Elena 2">
+    <img src="elena rinos.png" alt="Dibuix d'Elena 3">
+  </div>
 
-  <p>Dibuix d'Enya </p>
-  <img src="enya rinos.png" alt="Dibuix d'Enya" width="300">
+  <p>Dibuix d'Enya</p>
+  <div class="gallery">
+    <img src="enya rinos.png" alt="Dibuix d'Enya">
+  </div>
 
-  <p>Dibuix d'Ian </p>
-  <img src="ian rinos.png" alt="Dibuix d'Ian" width="300">
+  <p>Dibuix d'Ian</p>
+  <div class="gallery">
+    <img src="ian rinos.png" alt="Dibuix d'Ian">
+  </div>
 
-  <p>Dibuix de Jaume </p>
-  <img src="jaume rinos.png" alt="Dibuix de Jaume" width="300">
+  <p>Dibuix de Jaume</p>
+  <div class="gallery">
+    <img src="jaume rinos.png" alt="Dibuix de Jaume">
+  </div>
 
-  <p>Dibuix de Marc </p>
-  <img src="marc rinos.png" alt="Dibuix de Marc" width="300">
+  <p>Dibuix de Marc</p>
+  <div class="gallery">
+    <img src="marc rinos.png" alt="Dibuix de Marc">
+  </div>
 
   <p>Dibuix de Miguel</p>
-  <img src="miguel rinos.png" alt="Dibuix de Miguel" width="300">
+  <div class="gallery">
+    <img src="miguel rinos.png" alt="Dibuix de Miguel">
+  </div>
 
-  <p>Dibuix de Neus </p>
-  <img src="neus rinos.png" alt="Dibuix de Neus" width="300">
+  <p>Dibuix de Neus</p>
+  <div class="gallery">
+    <img src="neus rinos.png" alt="Dibuix de Neus">
+  </div>
 
-  <p>Dibuix d'Olivia </p>
-  <img src="olivia rinos.png" alt="Dibuix d'Olivia" width="300">
+  <p>Dibuix d'Olivia</p>
+  <div class="gallery">
+    <img src="olivia rinos.png" alt="Dibuix d'Olivia">
+  </div>
 
-  <p>Dibuix d'Olmo </p>
-  <img src="olmo rinos.png" alt="Dibuix d'Olmo" width="300">
+  <p>Dibuix d'Olmo</p>
+  <div class="gallery">
+    <img src="olmo rinos.png" alt="Dibuix d'Olmo">
+  </div>
 
   <p>Dibuix de Xavi</p>
-  <img src="xavi rinos.png" alt="Dibuix de Xavi" width="300">
+  <div class="gallery">
+    <img src="xavi rinos.png" alt="Dibuix de Xavi">
+  </div>
 
 </body>
 </html>
