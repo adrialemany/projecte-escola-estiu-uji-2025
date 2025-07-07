@@ -2,40 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Projecte Elefants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecte Girafes</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Projecte del grup Elefants</h1>
+  <h1>Projecte del grup Girafes</h1>
 
   <p>Dibuix d'Ainhoa</p>
-  <img src="AINHOA_GIRAFA.png" alt="Dibuix d'Ainhoa" width="300">
+  <div class="gallery">
+    <img src="AINHOA_GIRAFA.png" alt="Dibuix d'Ainhoa">
+  </div>
 
   <p>Dibuix d'Illia</p>
-  <img src="Illia Girafes.png" alt="Dibuix d'Illia" width="300">
+  <div class="gallery">
+    <img src="Illia Girafes.png" alt="Dibuix d'Illia">
+  </div>
 
   <p>Dibuix d'Isabel</p>
-  <img src="Isabel Girafesl.png" alt="Dibuix d'Isabel" width="300">
+  <div class="gallery">
+    <img src="Isabel Girafesl.png" alt="Dibuix d'Isabel">
+  </div>
 
   <p>Dibuix de Mateo</p>
-  <img src="MATEO_GIRAFA.png" alt="Dibuix de Mateo" width="300">
+  <div class="gallery">
+    <img src="MATEO_GIRAFA.png" alt="Dibuix de Mateo">
+  </div>
 
   <p>Dibuix de Pau</p>
-  <img src="PAU_BORDAS_GIRAFES.png" alt="Dibuix de Pau" width="300">
+  <div class="gallery">
+    <img src="PAU_BORDAS_GIRAFES.png" alt="Dibuix de Pau">
+  </div>
 
   <p>Dibuix de Pablo</p>
-  <img src="Pablo girafes.png" alt="Dibuix de Pablo" width="300">
+  <div class="gallery">
+    <img src="Pablo girafes.png" alt="Dibuix de Pablo">
+  </div>
 
-  <p>Dibuix de Aitana</p>
-  <img src="aitana girafes.png" alt="Dibuix d'Aitana" width="300">
+  <p>Dibuix d'Aitana</p>
+  <div class="gallery">
+    <img src="aitana girafes.png" alt="Dibuix d'Aitana">
+  </div>
 
   <p>Dibuix de Sergio</p>
-  <img src="sergio girafes.png" alt="Dibuix de Sergio" width="300">
+  <div class="gallery">
+    <img src="sergio girafes.png" alt="Dibuix de Sergio">
+  </div>
 
-  <p>Dibuix de Ángel</p>
-  <img src="Ángel girafes.png" alt="Dibuix de Ángel" width="300">
+  <p>Dibuix d'Ángel</p>
+  <div class="gallery">
+    <img src="Ángel girafes.png" alt="Dibuix d'Ángel">
+  </div>
 
   <p>Dibuix d'Éric</p>
-  <img src="ÉRIC_GIRAFES.png" alt="Dibuix d'Éric" width="300">
-
+  <div class="gallery">
+    <img src="ÉRIC_GIRAFES.png" alt="Dibuix d'Éric">
+  </div>
 </body>
 </html>
