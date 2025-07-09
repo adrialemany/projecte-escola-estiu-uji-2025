@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecte Gossets</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Projecte del grup Gossets</h1>
+
+  <h2>1a quinzena</h2>
+  <h3>Hem jugat jocs educatius on hem après a utilitzar el ratolí i el teclat</h3>
+
+  <h2>2a quinzena</h2>
+  <h3>Alguns valents s'han atrevit a dibuixar!</h3>
+
+  <p>Dibuix de Isabel</p>
+  <div class="gallery">
+    <img src="isabel gosset.png" alt="Dibuix de Isabel">
+  </div>
+
+  <p>Dibuix de Laura</p>
+  <div class="gallery">
+    <img src="laura gosset.png" alt="Dibuix de Laura">
+  </div>
+
+  <p>Dibuix de Marina</p>
+  <div class="gallery">
+    <img src="marina gosset.png" alt="Dibuix de Marina">
+  </div>
+
+  <p>Dibuix de Mario Viñuela</p>
+  <div class="gallery">
+    <img src="mario viñuela.png" alt="Dibuix de Mario Viñuela">
+  </div>
+
+</body>
+</html>
