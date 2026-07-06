@@ -89,6 +89,9 @@
             height: 230,
             skin: encodeURI(skinUrl)
           });
+          viewer.animation = new skinview3d.WalkingAnimation();
+          viewer.autoRotate = true; 
+          viewer.autoRotateSpeed = 0.5;
           
           viewer.autoRotate = false; 
           viewer.controls.enableRotate = true;
