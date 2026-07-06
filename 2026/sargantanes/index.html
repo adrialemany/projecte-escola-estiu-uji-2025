@@ -5,48 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Sargantanes - 2026</title>
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
-    }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h1 { color: #90caf9; margin-bottom: 5px; }
+    h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
+    .intro { max-width: 800px; text-align: center; color: #cccccc; margin-bottom: 40px; font-size: 1.1rem; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; }
+    
+    .project-card { background-color: #1e1e1e; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #333; text-align: center; }
+    .project-card:hover { border-color: #90caf9; }
+    
+    .img-preview { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; background-color: #252525; }
+    
+    .project-title { font-weight: bold; color: #ffffff; font-size: 1.1rem; margin-bottom: 10px; }
+    .project-type { font-size: 0.8rem; background-color: #333; color: #ffcc80; padding: 4px 10px; border-radius: 12px; margin-bottom: 20px; }
+    
+    .btn-action { display: inline-block; padding: 10px 20px; background-color: #1e88e5; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; width: 80%; }
+    .btn-action:hover { background-color: #42a5f5; }
+    
+    .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Sargantanes</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
+  <h1>Grup de les Sargantanes 🦎</h1>
+  <h2>Projecte Ofimàtic: Planificació del Viatge Ideal - Edició 2026</h2>
+  <p class="intro">
+    Els alumnes han treballat com a autèntics dissenyadors de viatges utilitzant eines digitals d'edició i maquetació. A continuació us presentem els seus cartells i itineraris ideals en format digital!
+  </p>
+
+  <div class="grid">
+    <div class="project-card">
+      <img src="SARGANTANA ABEL VIATGE.png" class="img-preview" alt="Abel">
+      <div class="project-title">Viatge Ideal: Abel</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="SARGANTANA ABEL VIATGE.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="SARGANTANA.DARIO C.V.png" class="img-preview" alt="Dario">
+      <div class="project-title">Viatge Ideal: Dario</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="SARGANTANA.DARIO C.V.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="davi.png" class="img-preview" alt="David">
+      <div class="project-title">Viatge Ideal: David</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="davi.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantanalucas.png" class="img-preview" alt="Lucas">
+      <div class="project-title">Viatge Ideal: Lucas</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantanalucas.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="SARGANTANA NURIA  MOLA.png" class="img-preview" alt="Nuria">
+      <div class="project-title">Viatge Ideal: Nuria</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="SARGANTANA NURIA  MOLA.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="RAUL.png" class="img-preview" alt="Raul">
+      <div class="project-title">Viatge Ideal: Raúl</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="RAUL.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantanadespiste.png" class="img-preview" alt="Despiste">
+      <div class="project-title">Projecte: Despiste</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantanadespiste.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantan ao.png" class="img-preview" alt="AO">
+      <div class="project-title">Projecte: AO</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantan ao.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="SARGANTANA1.png" class="img-preview" alt="Sargantana 1">
+      <div class="project-title">Projecte: Sargantana 1</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="SARGANTANA1.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantana2.png" class="img-preview" alt="Sargantana 2">
+      <div class="project-title">Projecte: Sargantana 2</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantana2.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantana 12e31.png" class="img-preview" alt="12e31">
+      <div class="project-title">Projecte: 12e31</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantana 12e31.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantaneta.png" class="img-preview" alt="Sargantaneta">
+      <div class="project-title">Projecte: Sargantaneta</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantaneta.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="sargantanota.png" class="img-preview" alt="Sargantanota">
+      <div class="project-title">Projecte: Sargantanota</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="sargantanota.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+  </div>
+
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
 </body>
 </html>

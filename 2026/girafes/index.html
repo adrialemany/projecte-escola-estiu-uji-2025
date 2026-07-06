@@ -5,48 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Girafes - 2026</title>
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
-    }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h1 { color: #90caf9; margin-bottom: 5px; }
+    h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 40px; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; }
+    
+    .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); border-color: #90caf9; }
+    
+    .drawing-img { width: 100%; height: 200px; object-fit: contain; border-radius: 8px; background-color: #252525; }
+    
+    .author-name { margin-top: 15px; font-weight: bold; color: #ffffff; text-align: center; font-size: 1.05rem; text-transform: capitalize; }
+    
+    .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Girafes</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
+  <h1>Grup de les Girafes 🦒</h1>
+  <h2>Dibuixos i Art Digital - Edició 2026</h2>
+
+  <div class="grid">
+    <div class="card"><img src="españa.png" class="drawing-img" alt="España"><div class="author-name">España</div></div>
+    <div class="card"><img src="girafa.png" class="drawing-img" alt="Girafa"><div class="author-name">Girafa</div></div>
+    <div class="card"><img src="girafa2.png" class="drawing-img" alt="Girafa 2"><div class="author-name">Girafa 2</div></div>
+    <div class="card"><img src="girafeta.png" class="drawing-img" alt="Girafeta"><div class="author-name">Girafeta</div></div>
+    <div class="card"><img src="girafetaa.png" class="drawing-img" alt="Girafetaa"><div class="author-name">Girafetaa</div></div>
+    <div class="card"><img src="girafina.png" class="drawing-img" alt="Girafina"><div class="author-name">Girafina</div></div>
+    <div class="card"><img src="Sense títol.png" class="drawing-img" alt="Sense títol"><div class="author-name">Sense títol</div></div>
+    <div class="card"><img src="Sense títol2.png" class="drawing-img" alt="Sense títol 2"><div class="author-name">Sense títol 2</div></div>
+    <div class="card"><img src="Sense títol3.png" class="drawing-img" alt="Sense títol 3"><div class="author-name">Sense títol 3</div></div>
+  </div>
+
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
 </body>
 </html>

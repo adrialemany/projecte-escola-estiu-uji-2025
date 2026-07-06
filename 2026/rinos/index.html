@@ -4,49 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Rinos - 2026</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skinview3d/3.0.1/skinview3d.bundle.min.js"></script>
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
-    }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h1 { color: #90caf9; margin-bottom: 5px; }
+    h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
+    .section-title { width: 90%; max-width: 1000px; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 40px; color: #ffcc80; font-size: 1.5rem; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; margin-top: 20px; }
+    
+    .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); border-color: #90caf9; }
+    
+    .skin-canvas-wrapper { width: 180px; height: 240px; cursor: grab; }
+    .skin-canvas-wrapper:active { cursor: grabbing; }
+    
+    .drawing-img { width: 100%; height: 180px; object-fit: contain; border-radius: 8px; background-color: #252525; }
+    
+    .author-name { margin-top: 15px; font-weight: bold; color: #ffffff; text-align: center; font-size: 1.05rem; }
+    .tag { font-size: 0.75rem; background-color: #333; color: #90caf9; padding: 3px 8px; border-radius: 10px; margin-top: 5px; }
+    
+    .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Rinos</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
+  <h1>Grup dels Rinos 🦏</h1>
+  <h2>Creacions Digitals i Skins 3D - Edició 2026</h2>
+  <p style="color: #aaa; text-align: center;">💡 <em>Pots girar, apropar i moure els personatges 3D amb el dit o el ratolí!</em></p>
+
+  <div class="section-title">🎮 Disseny de Skins 3D (Minecraft)</div>
+  <div class="grid">
+    <div class="card"><div class="skin-viewer" data-skin="skinrinoalvaro.png"></div><div class="author-name">Álvaro</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="Minecraft skin Daniel rino.png"></div><div class="author-name">Daniel</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinoerika.png"></div><div class="author-name">Erika</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinogreta.png"></div><div class="author-name">Greta</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinohernan.png"></div><div class="author-name">Hernán</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinoines.png"></div><div class="author-name">Inés</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinojoan.png"></div><div class="author-name">Joan</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinojorge.png"></div><div class="author-name">Jorge</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinolaia.png"></div><div class="author-name">Laia</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skin minecraft marcel rinos.png"></div><div class="author-name">Marcel</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinoolympia.png"></div><div class="author-name">Olympia</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinopauf.png"></div><div class="author-name">Pau F.</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinosara.png"></div><div class="author-name">Sara</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinrinoxavi.png"></div><div class="author-name">Xavi</div><span class="tag">Skin 3D</span></div>
+  </div>
+
+  <div class="section-title">🎨 Dibuixos i Art Digital</div>
+  <div class="grid">
+    <div class="card"><img src="rinoandrea.png" class="drawing-img" alt="Andrea"><div class="author-name">Andrea</div></div>
+    <div class="card"><img src="rinos Arilena.png" class="drawing-img" alt="Arilena"><div class="author-name">Arilena</div></div>
+    <div class="card"><img src="Daniel   rino.png" class="drawing-img" alt="Daniel"><div class="author-name">Daniel</div></div>
+    <div class="card"><img src="rinos Erika.png" class="drawing-img" alt="Erika"><div class="author-name">Erika</div></div>
+    <div class="card"><img src="rinogreta.png" class="drawing-img" alt="Greta"><div class="author-name">Greta</div></div>
+    <div class="card"><img src="Rinoceronte - Hernán.png" class="drawing-img" alt="Hernán"><div class="author-name">Hernán</div></div>
+    <div class="card"><img src="rinoines.png" class="drawing-img" alt="Inés"><div class="author-name">Inés</div></div>
+    <div class="card"><img src="rinojoan.png" class="drawing-img" alt="Joan"><div class="author-name">Joan</div></div>
+    <div class="card"><img src="rinos jorge.png" class="drawing-img" alt="Jorge"><div class="author-name">Jorge</div></div>
+    <div class="card"><img src="laila rino.png" class="drawing-img" alt="Laila"><div class="author-name">Laila</div></div>
+    <div class="card"><img src="rinos marcel.png" class="drawing-img" alt="Marcel"><div class="author-name">Marcel</div></div>
+    <div class="card"><img src="2rinocerontemiguel.png" class="drawing-img" alt="Miguel"><div class="author-name">Miguel</div></div>
+    <div class="card"><img src="rinocerontemiguel.png" class="drawing-img" alt="Miguel 2"><div class="author-name">Miguel (2)</div></div>
+    <div class="card"><img src="rinoolyimpia.png" class="drawing-img" alt="Olympia"><div class="author-name">Olympia</div></div>
+    <div class="card"><img src="rino pau.png" class="drawing-img" alt="Pau"><div class="author-name">Pau</div></div>
+    <div class="card"><img src="rinos Sara.png" class="drawing-img" alt="Sara"><div class="author-name">Sara</div></div>
+    <div class="card"><img src="Xavi - Rino.png" class="drawing-img" alt="Xavi"><div class="author-name">Xavi</div></div>
+  </div>
+
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
+
+  <script>
+    document.querySelectorAll('.skin-viewer').forEach(container => {
+      const skinUrl = container.getAttribute('data-skin');
+      const viewer = new skinview3d.SkinViewer({
+        canvas: document.createElement('canvas'),
+        width: 180, height: 230, skin: skinUrl
+      });
+      viewer.animation = new skinview3d.WalkingAnimation();
+      viewer.autoRotate = true;
+      viewer.autoRotateSpeed = 0.5;
+      container.classList.add('skin-canvas-wrapper');
+      container.appendChild(viewer.canvas);
+    });
+  </script>
 </body>
 </html>

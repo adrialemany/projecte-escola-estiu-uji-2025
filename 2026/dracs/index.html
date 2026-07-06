@@ -5,48 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Dracs - 2026</title>
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
-    }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h1 { color: #90caf9; margin-bottom: 5px; }
+    h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
+    .intro { max-width: 800px; text-align: center; color: #cccccc; margin-bottom: 40px; font-size: 1.1rem; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; }
+    
+    .project-card { background-color: #1e1e1e; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #333; text-align: center; }
+    .project-card:hover { border-color: #90caf9; }
+    
+    .icon-preview { font-size: 3.5rem; margin-bottom: 15px; }
+    .img-preview { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+    
+    .project-title { font-weight: bold; color: #ffffff; font-size: 1.1rem; margin-bottom: 10px; }
+    .project-type { font-size: 0.8rem; background-color: #333; color: #ffcc80; padding: 4px 10px; border-radius: 12px; margin-bottom: 20px; }
+    
+    .btn-action { display: inline-block; padding: 10px 20px; background-color: #1e88e5; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; width: 80%; }
+    .btn-action:hover { background-color: #42a5f5; }
+    .btn-word { background-color: #2b579a; }
+    .btn-word:hover { background-color: #3e6eb8; }
+    
+    .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Dracs</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
+  <h1>Grup dels Dracs 🐲</h1>
+  <h2>Projecte Ofimàtic: Planificació del Viatge Ideal - Edició 2026</h2>
+  <p class="intro">
+    Els alumnes més majors han pres el rol d'agències de viatge digitals. Utilitzant eines de recerca, presentacions (PowerPoint), processadors de text (Word) i edició gràfica, han organitzat viatges espectaculars arreu del món. Descobreix els seus projectes!
+  </p>
+
+  <div class="grid">
+    <div class="project-card">
+      <div class="icon-preview">📑</div>
+      <div class="project-title">Viatge: Fingers de Pollo</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="dracsviatgefingersdepollo.pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">📑</div>
+      <div class="project-title">Viatge per Països</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="dracsviatgepaisos.pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">✈️</div>
+      <div class="project-title">Los Genios: Plan de Viatge</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="viaje dracs los genios.pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">🗺️</div>
+      <div class="project-title">Viatge RRMN</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="viatgedracs rrmn    ....pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">🌟</div>
+      <div class="project-title">Projecte Xadialju</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="Xadialju.pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">📊</div>
+      <div class="project-title">Presentació General</div>
+      <span class="project-type">Presentació PDF</span>
+      <a href="Presentació1.pdf" target="_blank" class="btn-action">Obrir Document</a>
+    </div>
+
+    <div class="project-card">
+      <img src="JAPON.png" class="img-preview" alt="Japó">
+      <div class="project-title">Destí: Japó</div>
+      <span class="project-type">Pòster Gràfic (PNG)</span>
+      <a href="JAPON.png" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="brasil.JPG" class="img-preview" alt="Brasil">
+      <div class="project-title">Destí: Brasil</div>
+      <span class="project-type">Pòster Gràfic (JPG)</span>
+      <a href="brasil.JPG" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+
+    <div class="project-card">
+      <img src="MEXICO.jpg" class="img-preview" alt="Mèxic">
+      <div class="project-title">Destí: Mèxic</div>
+      <span class="project-type">Pòster Gràfic (JPG)</span>
+      <a href="MEXICO.jpg" target="_blank" class="btn-action">Veure a fons</a>
+    </div>
+  </div>
+
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
 </body>
 </html>

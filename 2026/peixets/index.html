@@ -6,47 +6,46 @@
   <title>Projecte Peixets - 2026</title>
   <style>
     body {
-      background-color: #121212;
-      color: #f0f0f0;
+      background-color: #121212; color: #f0f0f0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center;
     }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
+    .container { max-width: 700px; text-align: center; margin-top: 30px; }
+    h1 { color: #90caf9; font-size: 2.2rem; }
+    .card {
+      background-color: #1e1e1e; padding: 30px; border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4); margin: 30px 0; border: 1px solid #333;
     }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
+    p { font-size: 1.1rem; line-height: 1.6; color: #cccccc; text-align: justify; }
+    .highlight { color: #ffcc80; font-weight: bold; text-align: center; display: block; margin-top: 15px; }
+    .btn-joc {
+      display: inline-block; margin-top: 25px; padding: 15px 30px;
+      background: linear-gradient(45deg, #42a5f5, #1e88e5); color: white;
+      text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(66, 165, 245, 0.4); transition: transform 0.2s, background 0.3s;
     }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    .btn-joc:hover { transform: scale(1.05); background: linear-gradient(45deg, #64b5f6, #2196f3); }
+    .back-link { margin-top: 40px; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Peixets</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
-  <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
+  <div class="container">
+    <h1>Grup dels Peixets 🐟</h1>
+    <h2>Iniciació al Món Digital - Edició 2026</h2>
+    
+    <div class="card">
+      <p>
+        A l'Escola d'Estiu de la UJI adaptem les activitats informàtiques a cada etapa evolutiva. En el cas dels nostres alumnes més menuts, el gran repte i objectiu principal no és crear arxius o dibuixar, sinó desenvolupar la <strong>psicomotricitat fina digital</strong>: aprendre a agafar el ratolí, comprendre la relació causa-efecte entre el moviment de la mà i el cursor a la pantalla, i fer els primers clics.
+      </p>
+      <p>
+        Per a fer-ho de manera divertida, educativa i sense frustracions, hem utilitzat el portal educatiu <strong>Owlie Boo (Búho Boo)</strong>, una sèrie de jocs interactius dissenyats especialment per a primeres edats, sense apressar ni comptar punts.
+      </p>
+      <span class="highlight">👨‍👩‍👧 Voleu ensenyar a casa com ho fan? Feu clic ací per a jugar junts:</span>
+      
+      <a href="https://www.owlieboo.com/juegos-infantiles.php" target="_blank" class="btn-joc">🎮 Jugar a Owlie Boo</a>
+    </div>
+
+    <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
+  </div>
 </body>
 </html>

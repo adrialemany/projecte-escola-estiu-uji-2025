@@ -4,49 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Cangurs - 2026</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skinview3d/3.0.1/skinview3d.bundle.min.js"></script>
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #90caf9;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-      color: #cccccc;
-      margin: 20px 0;
-    }
-    .back-link {
-      margin-top: 50px;
-      text-decoration: none;
-      color: #90caf9;
-      border: 1px solid #90caf9;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .back-link:hover {
-      background-color: rgba(144, 202, 249, 0.1);
-    }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h1 { color: #90caf9; margin-bottom: 5px; }
+    h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 40px; }
+    .section-title { width: 90%; max-width: 1000px; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 40px; color: #ffcc80; font-size: 1.5rem; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; margin-top: 20px; }
+    
+    .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); border-color: #90caf9; }
+    
+    .skin-canvas-wrapper { width: 180px; height: 240px; cursor: grab; }
+    .skin-canvas-wrapper:active { cursor: grabbing; }
+    
+    .drawing-img { width: 100%; height: 180px; object-fit: contain; border-radius: 8px; background-color: #252525; }
+    
+    .author-name { margin-top: 15px; font-weight: bold; color: #ffffff; text-align: center; font-size: 1.05rem; text-transform: capitalize; }
+    .tag { font-size: 0.75rem; background-color: #333; color: #90caf9; padding: 3px 8px; border-radius: 10px; margin-top: 5px; }
+    
+    .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Projecte del grup de Cangurs</h1>
-  <h2>Edició 2026</h2>
-  
-  <p>Estem treballant en les nostres activitats a l'aula d'informàtica.</p>
-  <p>Pròximament es penjaran les cançons, imatges i creacions d'aquest grup de la 1a i 2a quinzena!</p>
-  
+  <h1>Grup dels Cangurs 🦘</h1>
+  <h2>Creacions Digitals i Skins 3D - Edició 2026</h2>
+  <p style="color: #aaa; text-align: center;">💡 <em>Pots girar, apropar i moure els personatges 3D amb el dit o el ratolí!</em></p>
+
+  <div class="section-title">🎮 Disseny de Skins 3D (Minecraft)</div>
+  <div class="grid">
+    <div class="card"><div class="skin-viewer" data-skin="skinaitana.png"></div><div class="author-name">Aitana</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="SKIN CLARA CANGUR5S.png"></div><div class="author-name">Clara</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skineric.png"></div><div class="author-name">Eric</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinferranribbit.png"></div><div class="author-name">Ferran</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinjimena.png"></div><div class="author-name">Jimena</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skin lola cangur.png"></div><div class="author-name">Lola</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinlua.png"></div><div class="author-name">Lua</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinmartin.png"></div><div class="author-name">Martín</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinmia.png"></div><div class="author-name">Mia</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="SKINOIER.png"></div><div class="author-name">Oier</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skinpablo.png"></div><div class="author-name">Pablo</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skin pablo cangur.png"></div><div class="author-name">Pablo (Cangur)</div><span class="tag">Skin 3D</span></div>
+    <div class="card"><div class="skin-viewer" data-skin="skin pau cangur.png"></div><div class="author-name">Pau</div><span class="tag">Skin 3D</span></div>
+  </div>
+
+  <div class="section-title">🎨 Dibuixos i Art Digital</div>
+  <div class="grid">
+    <div class="card"><img src="cangur aitana.png" class="drawing-img" alt="Aitana"><div class="author-name">Aitana</div></div>
+    <div class="card"><img src="cangubonnie.png" class="drawing-img" alt="Bonnie"><div class="author-name">Bonnie</div></div>
+    <div class="card"><img src="cangurestrella.png" class="drawing-img" alt="Estrella"><div class="author-name">Estrella</div></div>
+    <div class="card"><img src="cangustrellita.png" class="drawing-img" alt="Estrellita"><div class="author-name">Estrellita</div></div>
+    <div class="card"><img src="estrelola.png" class="drawing-img" alt="Lola"><div class="author-name">Lola</div></div>
+    <div class="card"><img src="cangurmiwi.png" class="drawing-img" alt="Miwi"><div class="author-name">Miwi</div></div>
+    <div class="card"><img src="CANGUR OIER.png" class="drawing-img" alt="Oier"><div class="author-name">Oier</div></div>
+    <div class="card"><img src="cangur pabol.png" class="drawing-img" alt="Pablo"><div class="author-name">Pablo</div></div>
+    <div class="card"><img src="cangur pau.png" class="drawing-img" alt="Pau"><div class="author-name">Pau</div></div>
+    <div class="card"><img src="cangursamuel.png" class="drawing-img" alt="Samuel"><div class="author-name">Samuel</div></div>
+    <div class="card"><img src="cangubstracto.png" class="drawing-img" alt="Abstracte"><div class="author-name">Cangur Abstracte</div></div>
+    <div class="card"><img src="cangur_abstracte.png" class="drawing-img" alt="Abstracte 2"><div class="author-name">Abstracte 2</div></div>
+    <div class="card"><img src="cangurete.png" class="drawing-img" alt="Cangurete"><div class="author-name">Cangurete</div></div>
+    <div class="card"><img src="canguret.png" class="drawing-img" alt="Canguret"><div class="author-name">Canguret</div></div>
+    <div class="card"><img src="cangurobot.png" class="drawing-img" alt="Robot"><div class="author-name">Cangur Robot</div></div>
+    <div class="card"><img src="cangurogatonoche.png" class="drawing-img" alt="Gato Noche"><div class="author-name">Gato Noche</div></div>
+    <div class="card"><img src="canguro lava.png" class="drawing-img" alt="Lava"><div class="author-name">Canguro Lava</div></div>
+    <div class="card"><img src="canguroso.png" class="drawing-img" alt="Oso"><div class="author-name">Canguroso</div></div>
+    <div class="card"><img src="cangursust.png" class="drawing-img" alt="Sust"><div class="author-name">Cangursust</div></div>
+  </div>
+
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
+
+  <script>
+    // Converteix automàticament tots els contenidors de skin en personatges 3D
+    document.querySelectorAll('.skin-viewer').forEach(container => {
+      const skinUrl = container.getAttribute('data-skin');
+      const viewer = new skinview3d.SkinViewer({
+        canvas: document.createElement('canvas'),
+        width: 180,
+        height: 230,
+        skin: skinUrl
+      });
+      // Fer que caminen i giren suaument
+      viewer.animation = new skinview3d.WalkingAnimation();
+      viewer.autoRotate = true;
+      viewer.autoRotateSpeed = 0.5;
+      
+      container.classList.add('skin-canvas-wrapper');
+      container.appendChild(viewer.canvas);
+    });
+  </script>
 </body>
 </html>
