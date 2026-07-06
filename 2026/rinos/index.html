@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Rinos - 2026</title>
-  <!-- Servidor CDN oficial i actualitzat de jsDelivr per a skinview3d -->
+  <!-- Llibreria oficial skinview3d -->
   <script src="https://cdn.jsdelivr.net/npm/skinview3d@3/dist/skinview3d.bundle.min.js"></script>
   <style>
     body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
@@ -17,7 +17,8 @@
     .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
     .card:hover { transform: translateY(-5px); border-color: #90caf9; }
     
-    .skin-canvas-wrapper { width: 180px; height: 230px; display: flex; justify-content: center; align-items: center; cursor: grab; }
+    /* Contenidor del visor 3D amb cursor interactiu */
+    .skin-canvas-wrapper { width: 180px; height: 230px; display: flex; justify-content: center; align-items: center; cursor: grab; background-color: #181818; border-radius: 8px; }
     .skin-canvas-wrapper:active { cursor: grabbing; }
     
     .drawing-img { width: 100%; height: 180px; object-fit: contain; border-radius: 8px; background-color: #252525; }
@@ -31,7 +32,7 @@
 <body>
   <h1>Grup dels Rinos 🦏</h1>
   <h2>Creacions Digitals i Skins 3D - Edició 2026</h2>
-  <p style="color: #aaa; text-align: center;">💡 <em>Pots girar, apropar i moure els personatges 3D amb el dit o el ratolí!</em></p>
+  <p style="color: #aaa; text-align: center;">💡 <em>Fes clic i arrossega el personatge amb el ratolí o el dit per a rotar-lo en 3D!</em></p>
 
   <!-- SECCIÓ SKINS 3D -->
   <div class="section-title">🎮 Disseny de Skins 3D (Minecraft)</div>
@@ -76,43 +77,38 @@
 
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
 
-  <!-- SCRIPT BLINDAT PER A RENDERING 3D AMB FALLBACK -->
+  <!-- SCRIPT 3D INTERACTIU (SENSE ANIMACIONS, NOMÉS ROTACIÓ) -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll('.skin-viewer').forEach(container => {
         const skinUrl = container.getAttribute('data-skin');
         container.classList.add('skin-canvas-wrapper');
         
-        // 1. Mostrar imatge 2D pixelada d'emergència immediatament
-        const fallbackImg = document.createElement('img');
-        fallbackImg.src = skinUrl;
-        fallbackImg.style.width = '120px';
-        fallbackImg.style.height = '180px';
-        fallbackImg.style.objectFit = 'contain';
-        fallbackImg.style.imageRendering = 'pixelated';
-        container.appendChild(fallbackImg);
+        // 1. Creem l'element canvas i l'afegim al DOM immediatament (vital per a WebGL)
+        const canvas = document.createElement('canvas');
+        container.appendChild(canvas);
 
-        // 2. Carregar el motor 3D de manera segura
         try {
-          if (typeof skinview3d !== 'undefined') {
-            const canvas = document.createElement('canvas');
-            const viewer = new skinview3d.SkinViewer({
-              canvas: canvas,
-              width: 180,
-              height: 230,
-              skin: encodeURI(skinUrl) // Codifica espais en noms com "Minecraft skin..."
-            });
-            
-            viewer.animation = new skinview3d.WalkingAnimation();
-            viewer.autoRotate = true;
-            viewer.autoRotateSpeed = 0.5;
-            
-            // Si el 3D carrega sense error, llevem la imatge plana i posem el llenç 3D
-            container.innerHTML = '';
-            container.appendChild(canvas);
-          }
+          // 2. Inicialitzem el visor 3D en eixe canvas exactament
+          const viewer = new skinview3d.SkinViewer({
+            canvas: canvas,
+            width: 180,
+            height: 230,
+            skin: encodeURI(skinUrl) // Codifica espais per a evitar errors de xarxa
+          });
+          
+          // 3. Configuració pura 3D: sense caminar, sense rotació automàtica
+          viewer.autoRotate = false; 
+          
+          // Activem els controls perquè puguen rotar-lo i apropar-lo amb el ratolí/dit
+          viewer.controls.enableRotate = true;
+          viewer.controls.enableZoom = true;
+          viewer.controls.enablePan = false; // Evita que traguen el ninot fora del quadre
+          
         } catch (error) {
-          console.warn("No s'ha pogut carregar el 3D per a " + skinUrl + ". Es manté la versió 2D.", error);
+          console.error("No s'ha pogut iniciar WebGL per a " + skinUrl, error);
+          // Només si el navegador és molt antic o hi ha un bloqueig local sever, posarà la foto 2D
+          container.innerHTML = `<img src="${skinUrl}" style="width:120px; height:180px; object-fit:contain; image-rendering:pixelated;" alt="Skin 2D">`;
         }
       });
     });
