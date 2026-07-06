@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecte Rinos - 2026</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skinview3d/3.0.1/skinview3d.bundle.min.js"></script>
+  <!-- Servidor CDN oficial i actualitzat de jsDelivr per a skinview3d -->
+  <script src="https://cdn.jsdelivr.net/npm/skinview3d@3/dist/skinview3d.bundle.min.js"></script>
   <style>
     body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
     h1 { color: #90caf9; margin-bottom: 5px; }
@@ -16,7 +17,7 @@
     .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
     .card:hover { transform: translateY(-5px); border-color: #90caf9; }
     
-    .skin-canvas-wrapper { width: 180px; height: 240px; cursor: grab; }
+    .skin-canvas-wrapper { width: 180px; height: 230px; display: flex; justify-content: center; align-items: center; cursor: grab; }
     .skin-canvas-wrapper:active { cursor: grabbing; }
     
     .drawing-img { width: 100%; height: 180px; object-fit: contain; border-radius: 8px; background-color: #252525; }
@@ -32,6 +33,7 @@
   <h2>Creacions Digitals i Skins 3D - Edició 2026</h2>
   <p style="color: #aaa; text-align: center;">💡 <em>Pots girar, apropar i moure els personatges 3D amb el dit o el ratolí!</em></p>
 
+  <!-- SECCIÓ SKINS 3D -->
   <div class="section-title">🎮 Disseny de Skins 3D (Minecraft)</div>
   <div class="grid">
     <div class="card"><div class="skin-viewer" data-skin="skinrinoalvaro.png"></div><div class="author-name">Álvaro</div><span class="tag">Skin 3D</span></div>
@@ -50,6 +52,7 @@
     <div class="card"><div class="skin-viewer" data-skin="skinrinoxavi.png"></div><div class="author-name">Xavi</div><span class="tag">Skin 3D</span></div>
   </div>
 
+  <!-- SECCIÓ DIBUIXOS -->
   <div class="section-title">🎨 Dibuixos i Art Digital</div>
   <div class="grid">
     <div class="card"><img src="rinoandrea.png" class="drawing-img" alt="Andrea"><div class="author-name">Andrea</div></div>
@@ -73,18 +76,45 @@
 
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
 
+  <!-- SCRIPT BLINDAT PER A RENDERING 3D AMB FALLBACK -->
   <script>
-    document.querySelectorAll('.skin-viewer').forEach(container => {
-      const skinUrl = container.getAttribute('data-skin');
-      const viewer = new skinview3d.SkinViewer({
-        canvas: document.createElement('canvas'),
-        width: 180, height: 230, skin: skinUrl
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.skin-viewer').forEach(container => {
+        const skinUrl = container.getAttribute('data-skin');
+        container.classList.add('skin-canvas-wrapper');
+        
+        // 1. Mostrar imatge 2D pixelada d'emergència immediatament
+        const fallbackImg = document.createElement('img');
+        fallbackImg.src = skinUrl;
+        fallbackImg.style.width = '120px';
+        fallbackImg.style.height = '180px';
+        fallbackImg.style.objectFit = 'contain';
+        fallbackImg.style.imageRendering = 'pixelated';
+        container.appendChild(fallbackImg);
+
+        // 2. Carregar el motor 3D de manera segura
+        try {
+          if (typeof skinview3d !== 'undefined') {
+            const canvas = document.createElement('canvas');
+            const viewer = new skinview3d.SkinViewer({
+              canvas: canvas,
+              width: 180,
+              height: 230,
+              skin: encodeURI(skinUrl) // Codifica espais en noms com "Minecraft skin..."
+            });
+            
+            viewer.animation = new skinview3d.WalkingAnimation();
+            viewer.autoRotate = true;
+            viewer.autoRotateSpeed = 0.5;
+            
+            // Si el 3D carrega sense error, llevem la imatge plana i posem el llenç 3D
+            container.innerHTML = '';
+            container.appendChild(canvas);
+          }
+        } catch (error) {
+          console.warn("No s'ha pogut carregar el 3D per a " + skinUrl + ". Es manté la versió 2D.", error);
+        }
       });
-      viewer.animation = new skinview3d.WalkingAnimation();
-      viewer.autoRotate = true;
-      viewer.autoRotateSpeed = 0.5;
-      container.classList.add('skin-canvas-wrapper');
-      container.appendChild(viewer.canvas);
     });
   </script>
 </body>
