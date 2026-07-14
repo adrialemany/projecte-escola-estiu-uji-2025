@@ -8,23 +8,27 @@
     body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
     h1 { color: #90caf9; margin-bottom: 5px; }
     h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 40px; }
+    .section-title { width: 90%; max-width: 1000px; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 40px; color: #ffcc80; font-size: 1.5rem; }
     
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; margin-top: 20px; }
     
     .card { background-color: #1e1e1e; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #2a2a2a; transition: transform 0.2s; }
     .card:hover { transform: translateY(-5px); border-color: #90caf9; }
     
     .drawing-img { width: 100%; height: 200px; object-fit: contain; border-radius: 8px; background-color: #252525; }
+    .wordart-img { width: 100%; height: 160px; object-fit: contain; border-radius: 8px; background-color: #181818; padding: 5px; box-sizing: border-box; }
     
     .author-name { margin-top: 15px; font-weight: bold; color: #ffffff; text-align: center; font-size: 1.05rem; text-transform: capitalize; }
+    .tag { font-size: 0.75rem; background-color: #333; color: #ffcc80; padding: 3px 8px; border-radius: 10px; margin-top: 5px; }
     
     .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
   <h1>Grup de les Girafes 🦒</h1>
-  <h2>Dibuixos i Art Digital - Edició 2026</h2>
+  <h2>Dibuixos, Art Digital i WordArt - Edició 2026</h2>
 
+  <div class="section-title">🎨 Dibuixos i Art Digital</div>
   <div class="grid">
     <div class="card"><img src="españa.png" class="drawing-img" alt="España"><div class="author-name">España</div></div>
     <div class="card"><img src="girafa.png" class="drawing-img" alt="Girafa"><div class="author-name">Girafa</div></div>
@@ -35,6 +39,47 @@
     <div class="card"><img src="Sense títol.png" class="drawing-img" alt="Sense títol"><div class="author-name">Sense títol</div></div>
     <div class="card"><img src="Sense títol2.png" class="drawing-img" alt="Sense títol 2"><div class="author-name">Sense títol 2</div></div>
     <div class="card"><img src="Sense títol3.png" class="drawing-img" alt="Sense títol 3"><div class="author-name">Sense títol 3</div></div>
+  </div>
+
+  <div class="section-title">✨ Art Creatiu (WordArt)</div>
+  <div class="grid">
+    <div class="card"><img src="wordart/girafa alejandro.png" class="wordart-img" alt="Alejandro"><div class="author-name">Alejandro</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaalex.png" class="wordart-img" alt="Álex"><div class="author-name">Álex</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa boianca.png" class="wordart-img" alt="Bianca"><div class="author-name">Bianca</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/bianca 2.png" class="wordart-img" alt="Bianca 2"><div class="author-name">Bianca (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/bianca 3.png" class="wordart-img" alt="Bianca 3"><div class="author-name">Bianca (3)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa brianna.png" class="wordart-img" alt="Brianna"><div class="author-name">Brianna</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaeric.png" class="wordart-img" alt="Eric"><div class="author-name">Eric</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaeric2.png" class="wordart-img" alt="Eric 2"><div class="author-name">Eric (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa guillem.png" class="wordart-img" alt="Guillem"><div class="author-name">Guillem</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa janeth.png" class="wordart-img" alt="Janeth"><div class="author-name">Janeth</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafajaneth2.png" class="wordart-img" alt="Janeth 2"><div class="author-name">Janeth (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa joan.png" class="wordart-img" alt="Joan"><div class="author-name">Joan</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa lluc.png" class="wordart-img" alt="Lluc"><div class="author-name">Lluc</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa lucía.png" class="wordart-img" alt="Lucía"><div class="author-name">Lucía</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/lucias 2.png" class="wordart-img" alt="Lucía 2"><div class="author-name">Lucía (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/lucia 3.png" class="wordart-img" alt="Lucía 3"><div class="author-name">Lucía (3)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa marina.png" class="wordart-img" alt="Marina"><div class="author-name">Marina</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa marina2.png" class="wordart-img" alt="Marina 2"><div class="author-name">Marina (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa mario u.png" class="wordart-img" alt="Mario U."><div class="author-name">Mario U.</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa mario v.png" class="wordart-img" alt="Mario V."><div class="author-name">Mario V.</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/GIRAFA MATEO F.png" class="wordart-img" alt="Mateo F."><div class="author-name">Mateo F.</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/GIRAFA MATEO F2.png" class="wordart-img" alt="Mateo F. 2"><div class="author-name">Mateo F. (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa mateo g.png" class="wordart-img" alt="Mateo G."><div class="author-name">Mateo G.</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa max.png" class="wordart-img" alt="Max"><div class="author-name">Max</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa max 2.png" class="wordart-img" alt="Max 2"><div class="author-name">Max (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa noah.png" class="wordart-img" alt="Noah"><div class="author-name">Noah</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa nuria.png" class="wordart-img" alt="Nuria"><div class="author-name">Nuria</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa nuria 2.png" class="wordart-img" alt="Nuria 2"><div class="author-name">Nuria (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa omar.png" class="wordart-img" alt="Omar"><div class="author-name">Omar</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa omar 2.png" class="wordart-img" alt="Omar 2"><div class="author-name">Omar (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona.png" class="wordart-img" alt="Ona"><div class="author-name">Ona</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona2.png" class="wordart-img" alt="Ona 2"><div class="author-name">Ona (2)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona3.png" class="wordart-img" alt="Ona 3"><div class="author-name">Ona (3)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona4.png" class="wordart-img" alt="Ona 4"><div class="author-name">Ona (4)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona5.png" class="wordart-img" alt="Ona 5"><div class="author-name">Ona (5)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafaona6.png" class="wordart-img" alt="Ona 6"><div class="author-name">Ona (6)</div><span class="tag">WordArt</span></div>
+    <div class="card"><img src="wordart/girafa sergio.png" class="wordart-img" alt="Sergio"><div class="author-name">Sergio</div><span class="tag">WordArt</span></div>
   </div>
 
   <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
