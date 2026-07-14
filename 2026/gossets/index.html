@@ -25,12 +25,21 @@
       box-shadow: 0 4px 10px rgba(66, 165, 245, 0.4); transition: transform 0.2s, background 0.3s;
     }
     .btn-joc:hover { transform: scale(1.05); background: linear-gradient(45deg, #64b5f6, #2196f3); }
-    .back-link { margin-top: 40px; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
+    
+    .letters-container { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+    .btn-letter {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;
+      background-color: #2b579a; color: white; text-decoration: none; border-radius: 8px;
+      font-weight: bold; transition: background 0.2s;
+    }
+    .btn-letter:hover { background-color: #3e6eb8; }
+    
+    .back-link { margin-top: 40px; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; display: inline-block; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Grup dels Gossets</h1>
+    <h1>Grup dels Gossets 🐶</h1>
     <h2>Iniciació al Món Digital - Edició 2026</h2>
     
     <div class="card">
@@ -43,6 +52,17 @@
       <span class="highlight">👨‍👩‍👧 Voleu ensenyar a casa com ho fan? Feu clic ací per a jugar junts:</span>
       
       <a href="https://owlieboo.com/educational-games/" target="_blank" class="btn-joc">🎮 Jugar a Owlie Boo</a>
+    </div>
+
+    <div class="card">
+      <h2 style="color: #ffcc80; margin-top: 0;">💌 Missatges i Dedicatòries Especials</h2>
+      <p>
+        A més del joc interactiu, a l'aula hem practicat un primer acostament a la lectoescriptura i al teclat d'una manera molt lliure, intuïtiva i creativa. Els nostres gossets han volgut plasmar la seua estima i dedicar unes boniques paraules als seus éssers estimats elaborant cartes digitals pròpies:
+      </p>
+      <div class="letters-container">
+        <a href="CARTA A JAVIER.pdf" target="_blank" class="btn-letter">📄 Carta dedicada a Javier</a>
+        <a href="CARTA A JUAN.pdf" target="_blank" class="btn-letter">📄 Carta dedicada a Juan</a>
+      </div>
     </div>
 
     <a href="../index.html" class="back-link">← Tornar a l'índex de 2026</a>
