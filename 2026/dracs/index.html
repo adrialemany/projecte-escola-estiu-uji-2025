@@ -10,7 +10,9 @@
     h2 { color: #aaa; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
     .intro { max-width: 800px; text-align: center; color: #cccccc; margin-bottom: 40px; font-size: 1.1rem; }
     
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; }
+    .section-title { width: 90%; max-width: 1000px; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 40px; color: #ffcc80; font-size: 1.5rem; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; width: 90%; max-width: 1000px; margin-top: 20px; }
     
     .project-card { background-color: #1e1e1e; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.4); border: 1px solid #333; text-align: center; }
     .project-card:hover { border-color: #90caf9; }
@@ -18,24 +20,65 @@
     .icon-preview { font-size: 3.5rem; margin-bottom: 15px; }
     .img-preview { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
     
+    /* Contenidor especial per a llegir les pàgines del còmic */
+    .comic-box { background-color: #1e1e1e; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-top: 20px; width: 90%; max-width: 1000px; box-sizing: border-box; text-align: center; }
+    .comic-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+    .comic-page { display: flex; flex-direction: column; align-items: center; background: #252525; padding: 10px; border-radius: 8px; }
+    .comic-img { max-width: 280px; height: auto; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+    
     .project-title { font-weight: bold; color: #ffffff; font-size: 1.1rem; margin-bottom: 10px; }
     .project-type { font-size: 0.8rem; background-color: #333; color: #ffcc80; padding: 4px 10px; border-radius: 12px; margin-bottom: 20px; }
     
     .btn-action { display: inline-block; padding: 10px 20px; background-color: #1e88e5; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; width: 80%; }
     .btn-action:hover { background-color: #42a5f5; }
-    .btn-word { background-color: #2b579a; }
-    .btn-word:hover { background-color: #3e6eb8; }
     
     .back-link { margin: 50px 0; text-decoration: none; color: #90caf9; border: 1px solid #90caf9; padding: 10px 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
   <h1>Grup dels Dracs 🐲</h1>
-  <h2>Projecte Ofimàtic: Planificació del Viatge Ideal - Edició 2026</h2>
+  <h2>Projectes Digital: Viatges, Còmics i Maquetació - Edició 2026</h2>
   <p class="intro">
-    Els alumnes més majors han pres el rol d'agències de viatge digitals. Utilitzant eines de recerca, presentacions (PowerPoint), processadors de text (Word) i edició gràfica, han organitzat viatges espectaculars arreu del món. Descobreix els seus projectes!
+    Els alumnes més majors han pres el rol d'agències de viatge digitals i dissenyadors de còmics. Utilitzant eines de recerca, presentacions (PowerPoint), processadors de text (Word) i edició gràfica, han creat projectes espectaculars. Descobreix les seues creacions!
   </p>
 
+  <div class="section-title">💬 Creació de Còmics Digital</div>
+  <div class="grid">
+    <div class="project-card">
+      <div class="icon-preview">📚</div>
+      <div class="project-title">Còmic: La Funa Histórica</div>
+      <span class="project-type">Còmic en PDF</span>
+      <a href="comic/LA FUNA HISTÓRICA.pdf" target="_blank" class="btn-action">Llegir Còmic</a>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-preview">🐉</div>
+      <div class="project-title">Còmic: Los Dragones</div>
+      <span class="project-type">Còmic en PDF</span>
+      <a href="comic/losdragones.pdf" target="_blank" class="btn-action">Llegir Còmic</a>
+    </div>
+  </div>
+
+  <div class="comic-box">
+    <div class="project-title" style="font-size: 1.4rem; color: #90caf9;">Còmic Gràfic: "Una lokura"</div>
+    <span class="project-type" style="display:inline-block; margin: 10px 0;">Seqüència completa (3 pàgines)</span>
+    <div class="comic-gallery">
+      <div class="comic-page">
+        <a href="comic/unalokura/1.png" target="_blank"><img src="comic/unalokura/1.png" class="comic-img" alt="Pàgina 1"></a>
+        <span style="margin-top:8px; font-size:0.9rem; color:#aaa;">Pàgina 1</span>
+      </div>
+      <div class="comic-page">
+        <a href="comic/unalokura/2.png" target="_blank"><img src="comic/unalokura/2.png" class="comic-img" alt="Pàgina 2"></a>
+        <span style="margin-top:8px; font-size:0.9rem; color:#aaa;">Pàgina 2</span>
+      </div>
+      <div class="comic-page">
+        <a href="comic/unalokura/3.png" target="_blank"><img src="comic/unalokura/3.png" class="comic-img" alt="Pàgina 3"></a>
+        <span style="margin-top:8px; font-size:0.9rem; color:#aaa;">Pàgina 3</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">✈️ Planificació de Viatges Ideals</div>
   <div class="grid">
     <div class="project-card">
       <div class="icon-preview">📑</div>
